@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+  int l1[5],l2[5],flag=0,i;
+  printf("Enter elements for List 1 : \n");
+  for(i=0;i<5;i++)
+  {
+    printf("Enter l1[%d] : ",i);
+    scanf("%d",&l1[i]);
+  }
+  printf("Enter elements for List 2 : \n");
+   for(i=0;i<5;i++)
+  {
+    printf("Enter l2[%d] : ",i);
+    scanf("%d",&l2[i]);
+  } 
+  for(i=0;i<5;i++)
+  {
+    if(l1[i]==l2[i])
+    flag=1;
+    else
+    flag=0;
+    break;
+  }
+
+  if(flag==1)
+  printf("They match");
+  else
+  printf("They do not match");
+}
